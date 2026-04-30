@@ -1,0 +1,42 @@
+.evolution-page { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.page-header .btn-sm { padding: 0.35rem 0.75rem; font-size: 0.8rem; margin-bottom: 0.5rem; display: inline-flex; }
+
+/* PR Banner */
+.evolution-pr {
+  display: flex; flex-wrap: wrap; gap: 1.5rem;
+  background: linear-gradient(135deg, rgba(108,99,255,0.1), rgba(0,212,170,0.1));
+  border-color: rgba(108,99,255,0.3);
+}
+.evolution-pr__item { display: flex; flex-direction: column; gap: 0.2rem; }
+.evolution-pr__item span { font-size: 0.78rem; color: var(--color-text-muted); }
+.evolution-pr__item strong { font-size: 1.3rem; font-weight: 800; color: var(--color-text-strong); }
+
+/* Chart */
+.evolution-chart-card { padding: 1.25rem; }
+.evolution-chart-card h4 { margin: 0 0 1.25rem; font-size: 0.9rem; color: var(--color-text-muted); }
+.evolution-chart {
+  display: flex; align-items: flex-end; gap: 0.75rem;
+  height: 180px; overflow-x: auto; padding-bottom: 0.5rem;
+}
+.evolution-bar-col { display: flex; flex-direction: column; align-items: center; flex: 0 0 auto; min-width: 54px; height: 100%; }
+.evolution-bar-label { font-size: 0.7rem; font-weight: 700; color: var(--color-text-muted); margin-bottom: 0.3rem; }
+.evolution-bar-wrap { flex: 1; width: 100%; display: flex; align-items: flex-end; }
+.evolution-bar {
+  width: 100%; border-radius: 6px 6px 0 0;
+  background: linear-gradient(180deg, var(--color-primary), rgba(108,99,255,0.4));
+  min-height: 4px; transition: height 0.4s ease;
+}
+.evolution-bar-date { font-size: 0.67rem; color: var(--color-text-muted); margin-top: 0.3rem; text-align: center; }
+
+/* Session list */
+.evolution-sessions { display: flex; flex-direction: column; gap: 0.5rem; }
+.evolution-sessions h4 { margin: 0 0 0.5rem; font-size: 0.9rem; color: var(--color-text-muted); }
+.evolution-session { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.75rem 1rem; flex-wrap: wrap; }
+.evolution-session__date { font-size: 0.83rem; font-weight: 600; color: var(--color-text); }
+.evolution-session__stats { display: flex; gap: 1rem; font-size: 0.8rem; color: var(--color-text-muted); font-weight: 600; }
+
+.evolution-empty { text-align: center; padding: 3rem 2rem; }
+.evolution-empty div { font-size: 3rem; margin-bottom: 1rem; }
+.evolution-empty h3 { margin: 0 0 0.5rem; }
+.evolution-empty p { color: var(--color-text-muted); }
